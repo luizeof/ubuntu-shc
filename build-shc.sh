@@ -4,7 +4,7 @@ for filename in /shc-data/bash/*.sh; do
 
     for ((i=0; i<=3; i++)); do
 
-        shc -U -f $filename -o "$filename-build"
+        shc -f $filename -o "$filename-build"
 
     done
 
