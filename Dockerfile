@@ -10,4 +10,14 @@ RUN sudo apt-get update
 
 RUN sudo apt-get install shc
 
+COPY build-shc.sh /usr/local/bin/build-shc
+
+RUN chmod +x /usr/local/bin/build-shc
+
+RUN mkdir /shc-data
+
+VOLUME /shc-data
+
+WORKDIR /shc-data
+
 CMD tail -f
