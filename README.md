@@ -8,6 +8,8 @@ This image compile all .sh scripts on bash folder.
 docker run -rm \
   --name ubuntu-bulder \
   --mount src=`pwd`,target=/shc-data,type=bind \
-  luizeof/ubuntu-shc-local \
+  luizeof/ubuntu-shc \
   build-shc
 ```
+
+Image available at https://hub.docker.com/r/luizeof/ubuntu-shc
