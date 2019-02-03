@@ -5,6 +5,10 @@ Ubuntu shc Compiler
 This image compile all .sh scripts on bash folder.
 
 ```bash
+
+# Create a bash folder on current directory
+mkdir bash
+
 docker run -rm \
   --name ubuntu-bulder \
   --mount src=`pwd`,target=/shc-data,type=bind \
